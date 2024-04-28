@@ -35,6 +35,34 @@ h1 {
     background-color: hsl(36, 33%, 97%);
 }
 
+.words {
+    font-size: 1.5rem;
+    margin: 8rem 3rem 4rem 3rem;
+}
+.form-body {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 10px 10px 5px hsl(0, 0%, 90%);
+}
+.input-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    align-items: flex-start;
+}
+h2 {
+    background-color: white;
+    margin: 0px;
+    padding-left: 2rem;
+}
+input {
+    border-color: hsl(0, 0%, 90%);
+    border-style: solid;
+    height: 2rem;
+    width: 16rem;
+}
 body {
     display: flex;
     height: 100vh;
