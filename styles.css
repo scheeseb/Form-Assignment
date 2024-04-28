@@ -82,8 +82,9 @@ input {
     display: none;
 }
 .name:focus {
-    border-color: hsl(214, 89%, 43%);
-    border-width: 3px;
+    border-color: hsl(214, 69%, 59%);
+    border-width: 1px;
+    outline: none;
     
 }
 label {
