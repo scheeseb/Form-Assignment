@@ -1,0 +1,43 @@
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+}
+.sidebar {
+    background-image: url(images/leafBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    height: 10rem;
+    width: 100%;
+    background-color: hsl(0, 0%, 0%, 0.5);
+}
+#logo{
+    object-fit: contain;
+    width: 6rem;
+    height: fit-content;
+}
+h1 {
+    font-size: 6rem;
+    color: hsl(36, 33%, 97%);
+}
+.main {
+    flex: 2;
+    background-color: hsl(36, 33%, 97%);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+}
