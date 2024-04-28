@@ -19,7 +19,7 @@
     <div class="main">
         <div class="words">
             <p>This is not a real online service! you know you need something like this in your life to
-                help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                help you realize your deepest dreams. Sign up now to get started.
             </p>
             <p>You know you want to.</p>
         </div>
@@ -28,33 +28,36 @@
             <h2>Lets do this!</h2>
             <div class="form-body">
                 <div class="input-container">
-                    <label for="fname">First Name</label>
-                    <input id="fname" type="text">
+                    <label for="fname">FIRST NAME</label>
+                    <input class="name" id="fname" type="text">
                 </div>
                 <div class="input-container">
-                    <label for="lname">Last Name</label>
-                    <input id="lname" type="text">
+                    <label for="lname">LAST NAME</label>
+                    <input class="name" id="lname" type="text">
                 </div>
                 <div class="input-container">
-                    <label for="email">Email</label>
+                    <label for="email">EMAIL</label>
                     <input id="email" type="email">
                 </div>
                 <div class="input-container">
-                    <label for="phone">Phone Number</label>
+                    <label for="phone">PHONE NUMBER</label>
                     <input id="phone" type="tel">
                 </div>
                 <div class="input-container">
-                    <label for="password">Create Password</label>
-                    <input id="password" type="password">
+                    <label for="password">CREATE PASSWORD</label>
+                    <input class="password" id="password" type="password">
+                    <div id="password-incorrect-warning">*Passwords do not match</div>
                 </div>
                 <div class="input-container">
-                    <label for="password-confirm">Confirm Password</label>
-                    <input id="password-confirm" type="password">
+                    <label for="password-confirm">CONFIRM PASSWORD</label>
+                    <input class="password" id="password-confirm" type="password">
                 </div>
             </div>
             <button type="submit">Create Account</button>
         </form>
+        <div class="login">Already have an account <a href="https://www.youtube.com/watch?v=Z3sLhnDJJn0">Log in</a></div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

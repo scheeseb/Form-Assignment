@@ -3,6 +3,10 @@
 * ::after {
     box-sizing: border-box;
 }
+@font-face {
+    font-family: norse;
+    src: url(fonts/Norse-Bold.otf);
+}
 .sidebar {
     background-image: url(images/leafBackground.jpg);
     background-repeat: no-repeat;
@@ -29,14 +33,18 @@
 h1 {
     font-size: 6rem;
     color: hsl(36, 33%, 97%);
+    font-family: norse;
 }
 .main {
     flex: 2;
     background-color: hsl(36, 33%, 97%);
+    height: 100%;
 }
 
 .words {
     font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
     margin: 8rem 3rem 4rem 3rem;
 }
 .form-body {
@@ -55,17 +63,53 @@ h1 {
 h2 {
     background-color: white;
     margin: 0px;
-    padding-left: 2rem;
+    padding: 2rem 2rem 1rem;
 }
 input {
     border-color: hsl(0, 0%, 90%);
     border-style: solid;
     height: 2rem;
     width: 16rem;
+    border-radius: 3px;
+    appearance: none;
+}
+.password:invalid {
+    border-color: hsl(0, 75%, 50%);
+    border-width: 1px;
+}
+#password-incorrect-warning {
+    color: hsl(0, 75%, 50%);
+    display: none;
+}
+.name:focus {
+    border-color: hsl(214, 89%, 43%);
+    border-width: 3px;
+    
+}
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: .6rem;
+    color: hsl(0, 0%, 0%, .75);
+    margin-bottom: .5rem;
+}
+button {
+    margin: 2rem;
+    width: 12rem;
+    height: 3rem;
+    background-color: hsl(92, 20%, 35%);
+    color: white;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
 }
 body {
     display: flex;
     height: 100vh;
     width: 100vw;
     margin: 0px;
+}
+.login {
+    margin-left: 2rem;
 }
